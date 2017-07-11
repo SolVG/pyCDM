@@ -1,2 +1,2 @@
 # pyCDM
-python scripts for conflict diffusion model
+python and cython scripts for conflict diffusion model
