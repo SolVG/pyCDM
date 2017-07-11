@@ -67,7 +67,7 @@ def maketrialcdm(float betaparam, float t0, float st0, float A, float vc,
     # if threshold is not crossed, then nan is returned
     try:
             i   = np.where(abs(X) - betaparam > 0)[0][0]
-            rt  = st0 * np.random.randn() + t0 + i*dt
+            rt  = nondestime + i*dt
             rt = rt * np.sign(X[i])
         except:
             rt  = np.nan
